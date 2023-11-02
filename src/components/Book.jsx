@@ -10,11 +10,11 @@ const Book = ({ book }) => {
   }
   return (
     <Link to={`../book/${book.isbn13}`}>
-      <div className="overflow-hidden relative transition duration-200 transform hover:-translate-y-2 rounded shadow-xl hover:shadow-2xl">
+      <div className="overflow-hidden relative transition duration-200 transform hover:-translate-y-2 rounded shadow-xl hover:shadow-2xl h-96 lg:h-72">
         <img
           src={book.image}
           alt="book cover"
-          className="object-cover w-full h-56 md:h-64 xl:h-84"
+          className="object-cover w-full h-96 p-4 md:h-64 xl:h-84"
         />
 
         <div className="bg-black bg-opacity-75 inset-0 px-6 py-4 hover:opacity-100 opacity-0 text-gray-300 absolute transition-opacity duration-200 flex flex-col">
